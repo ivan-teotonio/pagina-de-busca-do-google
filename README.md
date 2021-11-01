@@ -9,7 +9,7 @@ Um site clone da página inicial do google feito em html e css  com flex-box
 
 ## Layout web
 
-
+![Web_1](https://github.com/ivan-teotonio/pagina-de-busca-do-google/blob/main/img/pagina.png)
 
 # Tecnologias utilizadas
 
