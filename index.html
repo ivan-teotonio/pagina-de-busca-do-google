@@ -7,19 +7,99 @@
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 	<link rel="shotcut icon" href="img/favicon.ico>" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 	<title>Google</title>
 </head>
 <body>
-	<header>
-		<div id="input-box">
-			<img src="img/google_logo.png" alt="Google Logo">
-			<form action="" >
-				<input type="text" name="search" value="Alan turing" id="">
-				<span class="lnr lnr-magnifier" id="search-icon"></span>
-				<span class="lnr lnr-keyboard" id="keyboard-icon"></span> 
-				<span class="lnr lnr-mic" id="mic-icon"></span>
-			</form>
+
+	<button
+	type="button"
+	class="btn btn-primary "
+	data-toggle="modal"
+	data-target="#exampleModal"
+	data-whatever="@mdo"
+	style="margin-left: 900px; display: block;"
+  >
+	Cadastre um Novo Site
+  </button>
+
+  <div
+	class="modal fade"
+	id="exampleModal"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+	
+  >
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Cadastrar Site</h5>
+		  <button
+			type="button"
+			class="close"
+			data-dismiss="modal"
+			aria-label="Close"
+		  >
+			<span aria-hidden="true">&times;</span>
+		  </button>
 		</div>
+		<div class="modal-body">
+		  <form id="websiteForm">
+			<div class="form-group">
+			  <label for="recipient-name" class="col-form-label"
+				>Nome:</label
+			  >
+			  <input type="text" class="form-control" id="recipient-name" />
+			</div>
+			<div class="form-group">
+			  <label for="message-text" class="col-form-label"
+				>URL:</label
+			  >
+			  <input type="text" class="form-control" id="message-text">
+			</div>
+		  
+		</div>
+		<div class="modal-footer">
+		  <button
+			type="button"
+			class="btn btn-secondary"
+			data-dismiss="modal"
+		  >
+			Fechar
+		  </button>
+		   <button type="submit" class="btn btn-primary">Cadastrar</button>
+		  
+		</div>
+	  </form>
+
+	  
+	  </div>
+	</div>
+  </div>
+
+
+
+
+
+
+	<header>
+
+		
+		 <div id="input-box"></div>
+		
+		
+				<input style="margin-left: 155px;font-size: 14px;width: 500px;border-radius: 22px;padding: 12px;" id="searchInput" placeholder="Digite um site" type="text" id="searchInput">
+				
+				<button onclick="search()" style="padding: 9px 12px; font-size: 18px;border-radius: 22px;">Buscar</button>
+		</div>
+		
 		<nav>
 			<ul class="links-list">
                <li class="active"><a href="#"><span class="lnr lnr-magnifier">
@@ -37,65 +117,34 @@
 	</header>
 	<div class="container">
 		<main>
-			<p id="results">Aproximadamente 14.400.000 resultados (0,39 segundos)</p>
-			<div class="saerch-result-box">
-				<a class="ref-link" href="#">pt.wikipedia.org > wiki > Alan_Turing <span class="triangle"></span></a>
-				<a class="main-link" href="#">Alan Turing - Wikipédia, a inclopédia livre</a>
-				<p class="search-result-desc">Alan Mathison Turing OBE (Paddington, Londres, 23 de Julho de 1912 - Cheshire East, Cheshire, 7 de Junho de 1954) foi um mátematico, lógico, ...</p>
-				<div class="info-box">
-					<p class="info"><span class="info-title">Causa de morte:</span>Suposto suícidio por ingestão de cianeto</p>
-					<p class="info"><span class="info-title">Nome completo:</span>Alan Metson Turing</p>
-					<p class="info"><span class="info-title">Morte:</span>7 de Junho de 1954 (41 anos)</p>
-					<p class="info"><span class="info-title">Alma mater:</span>Universidade de Cambridge</p>
-				</div>
-				<div class="related-results">
-					<ul>
-						<li><a href="#">Máquina de Turing &#183;</a></li>
-						<li><a href="#">Memorial a Alan Turing &#183;</a></li>
-						<li><a href="#">Teste de Turing &#183;</a></li>
-						<li><a href="#">Enigma &#183;</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="saerch-result-box">
-				<a class="ref-link" href="#">revistagalileu.globo.com > cultura > notícias > 2018/06 > 17-fatos-e-c... <span class="triangle"></span></a>
-				<a class="main-link" href="#">17 fatos e curiosidades sobre a vida de Alan Turing - Revista</a>
-				<p class="search-result-desc"><span class="result-date">7 de junho de 2018 -</span>Há 64 anos, uma dose de cianeto pôs fim a vida daquele que é considerado o pai da computação: inglês Alan Turing</p>
-			</div>
-
-			<div class="saerch-result-box">
-				<a class="ref-link" href="#">www.ebiografia.com > Alan Turing<span class="triangle"></span></a>
-				<a class="main-link" href="#">Biografia de Alan Turing - eBiografia</a>
-				<p class="search-result-desc"><span class="result-date">15 de junho de 2019 -</span>Alan Turing (1912 - 1954) foi um matemático britânico, pioneiro da computação, foi considerado o da ciência computacional.</p>
+			<div class="saerch-result-box" style="margin-top: 20px;">
+				<div id="searchResults"></div>
 			</div>
 		</main>
-		<aside>
-			<div class="gallery-box">
-				<img id="first-img" src="img/turing1.jpg" alt="Alan Turing">
-				<div id="gallery">
-					<div id="gallery-img1"></div>
-					<div id="gallery-img2"></div>
-					<div id="gallery-img3"></div>
-					<div id="gallery-img4"></div>
-					<div id="gallery-img5"></div>
-					<div id="gallery-img6"></div>
-				</div>
-				<a href="#" id="moreimg-btn"><span class="lnr lnr-picture">Mais imagens</span></a>
-			</div>
-			<div id="about-box">
-				<div id="name-box">
-					<h3 id="name">Alan Turing</h3>
-					<p id="role">Matemático</p>
-				</div>
-				<p class="about-text">
-					Alan Mathison Turing foi um matemático, cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico britânico. Wikipédia
-				</p>
-				<p class="about-text">
-					Nascimento: <span>22 de junho de 1912, Malda Vale, Londres, Reino Unido</span>
-				</p>
-			</div>
-		</aside>
 	</div>
+
+
+	
+		
+	
+
+	<script src="script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
 </body>
 </html>
